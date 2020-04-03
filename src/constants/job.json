@@ -1,5 +1,5 @@
 {
-	"title": "Software Engineer",
-	"techsUsed": ["aws", "k8s", "nodejs", "docker", "terraform"],
-	"company": "JayStack"
+  "title": "Software Engineer",
+  "techsUsed": ["aws", "k8s", "nodejs", "docker", "terraform"],
+  "company": "JayStack"
 }
