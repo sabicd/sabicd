@@ -4,7 +4,7 @@ import Socials from './Socials';
 import JobData from './JobData';
 import ProfilePicture from '../images/ProfilePicture.jpeg';
 import { Frame } from 'framer';
-function Portfolio() {
+function Personal() {
   return (
     <React.Fragment>
       <Grid container direction='column' alignItems='center' justify='center'>
@@ -32,4 +32,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Personal;
