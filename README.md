@@ -7,4 +7,5 @@
 - framer
 - material-ui
 
-### available at: sabicdaniel.xyz
+### available at:
+[sabicdaniel.xyz](sabicdaniel.xyz)
