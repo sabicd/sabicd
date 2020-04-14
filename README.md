@@ -8,4 +8,4 @@
 - material-ui
 
 ### available at:
-[sabicdaniel.xyz](sabicdaniel.xyz)
+[sabicdaniel.xyz](https://sabicdaniel.xyz)
