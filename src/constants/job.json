@@ -1,5 +1,14 @@
 {
   "title": "Software Engineer",
-  "techsUsed": ["aws", "k8s", "nodejs", "docker", "terraform"],
+  "techsUsed": [
+    "react-native",
+    "react",
+    "aws",
+    "k8s",
+    "nodejs",
+    "docker",
+    "terraform",
+    "redux-saga"
+  ],
   "company": "JayStack"
 }

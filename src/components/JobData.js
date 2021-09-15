@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Chip from '@material-ui/core/Chip';
-import job from '../constants/job.json';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import { motion } from 'framer';
+import React, { useState, useEffect } from "react";
+import Chip from "@material-ui/core/Chip";
+import job from "../constants/job.json";
+import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import { motion } from "framer";
 const { techsUsed, ...jobData } = job;
 const jobDataKeys = Object.keys(jobData);
 const jobDataParsed = jobDataKeys.map((key) => `${key}: ${jobData[key]}`);
@@ -15,18 +15,21 @@ const shuffle = (arr) =>
     .map((a) => a[1]);
 
 const spring = {
-  type: 'spring',
+  type: "spring",
   damping: 10,
   stiffness: 150,
 };
 const useStyles = makeStyles((theme) => ({
   techChip: {
     margin: theme.spacing(0.5),
+    justifyContent: "center",
   },
   jobChip: {
-    color: 'white',
-    backgroundColor: '#bdbdbd',
+    color: "white",
+    backgroundColor: "#bdbdbd",
     margin: theme.spacing(0.5),
+    //justifyContent: "center",
+    //selfAlign: "center",
   },
 }));
 const JobTitle = () => {
@@ -39,14 +42,16 @@ const JobTitle = () => {
   }, [jobDataState]);
 
   return (
-    <>
+    <React.Fragment>
       <Grid
         container
-        direction='column'
-        alignItems='center'
-        justify='center'
-        key='jobTitleGrid'>
-        <Grid item container key='jobTitleContentHolder'>
+        direction="column"
+        alignItems="center"
+        alignContent="center"
+        key="jobTitleGrid"
+        justify="center"
+      >
+        <Grid item container justify="center" key="jobTitleContentHolder">
           {jobDataState.map((element) => (
             <motion.div layoutTransition={spring} key={element}>
               <Chip key={element} label={element} className={classes.jobChip} />
@@ -54,7 +59,14 @@ const JobTitle = () => {
           ))}
         </Grid>
 
-        <Grid item container key='techs'>
+        <Grid
+          item
+          container
+          alignContent="center"
+          alignItems="center"
+          key="techs"
+          justify="center"
+        >
           {techsUsed.map((tech) => (
             <motion.div
               height={35}
@@ -64,9 +76,10 @@ const JobTitle = () => {
               whileHover={{ scale: 0.95 }}
               background={null}
               dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
-              key={tech}>
+              key={tech}
+            >
               <Chip
-                size='small'
+                size="small"
                 key={tech}
                 label={tech}
                 clickable
@@ -76,7 +89,7 @@ const JobTitle = () => {
           ))}
         </Grid>
       </Grid>
-    </>
+    </React.Fragment>
   );
 };
 
