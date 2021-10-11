@@ -17,8 +17,8 @@ const shuffle = (arr) =>
 
 const spring = {
   type: "spring",
-  damping: 10,
-  stiffness: 150,
+  damping: 20,
+  stiffness: 120,
 };
 const useStyles = makeStyles((theme) => ({
   techChip: {
