@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Chip from "@material-ui/core/Chip";
 import job from "../constants/job.json";
+import { SHUFFLE_TIMEOUT_IN_MILLISECONDS } from "../constants/JobData.constants";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { motion } from "framer";
@@ -38,7 +39,10 @@ const JobTitle = () => {
   const [jobDataState, setJobData] = useState(jobDataParsed);
 
   useEffect(() => {
-    setTimeout(() => setJobData(shuffle(jobDataState)), 3000);
+    setTimeout(
+      () => setJobData(shuffle(jobDataState)),
+      SHUFFLE_TIMEOUT_IN_MILLISECONDS
+    );
   }, [jobDataState]);
 
   return (
