@@ -10,8 +10,8 @@ function Personal() {
       <Grid container direction="column" alignItems="center" justify="center">
         <Grid item>
           <Frame
-            size={100}
-            radius={100}
+            size={120}
+            radius={120}
             position={"relative"}
             drag={true}
             dragPropagation={true}
