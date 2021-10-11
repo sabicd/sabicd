@@ -29,8 +29,6 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     backgroundColor: "#bdbdbd",
     margin: theme.spacing(0.5),
-    //justifyContent: "center",
-    //selfAlign: "center",
   },
 }));
 const JobTitle = () => {
