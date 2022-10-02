@@ -5,7 +5,7 @@ import { SHUFFLE_TIMEOUT_IN_MILLISECONDS } from "../constants/JobData.constants"
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { motion } from "framer";
-const { techsUsed, ...jobData } = job;
+const { skills, ...jobData } = job;
 const jobDataKeys = Object.keys(jobData);
 const jobDataParsed = jobDataKeys.map((key) => `${key}: ${jobData[key]}`);
 
@@ -69,7 +69,7 @@ const JobTitle = () => {
           key="techs"
           justify="center"
         >
-          {techsUsed.map((tech) => (
+          {skills.map((tech) => (
             <motion.div
               height={35}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

@@ -1,6 +1,6 @@
 {
   "title": "Software Engineer",
-  "techsUsed": [
+  "skills": [
     "react-native",
     "react",
     "aws",
@@ -8,6 +8,7 @@
     "nodejs",
     "docker",
     "terraform",
+    "serverless",
     "redux-saga"
   ],
   "company": "One-Beyond"
